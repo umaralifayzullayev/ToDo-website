@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	background: none;
+	outline: none;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	background-repeat: no-repeat;
+}
+html,
+body {
+	padding: 20px;
+	padding-bottom: 50vh;
+	background: linear-gradient(135deg, #333 50%, #f8f8f8 50%);
+	background-size: cover;
+	min-height: 100vh;
+	height: 100%;
+}
+
+html {
+	padding: 0;
+}
+
+.row {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+button {
+	cursor: pointer;
+}
+
+.add-form {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+.add-input {
+	height: 47px;
+	padding: 14px 16px;
+	border-radius: 6px;
+	border: 1px solid rgba(255, 255, 255, 0.27);
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+}
+.add-button {
+	padding: 10px 24px;
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 18px;
+	background-color: #6200ee;
+	color: #fff;
+}
+
+.search-form {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+.search-input {
+	height: 47px;
+	padding: 14px 16px;
+	border-radius: 6px;
+	border: 1px solid #000;
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+}
+.search-button {
+	padding: 10px 24px;
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 18px;
+	background-color: #6200ee;
+	color: #fff;
+}
+
+.number-body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.number-button {
+	padding: 10px 24px;
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 18px;
+	background-color: #f8f8f8;
+	color: #333;
+}
+
+.uncompleted-number-button {
+	background-color: #333;
+	color: #f8f8f8;
+}
+
+.number {
+	font-size: 50px;
+	color: #fff;
+}
+
+.uncompleted-number {
+	color: #333;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.list__item {
+	display: flex;
+	align-items: center;
+	width: 1000px;
+	justify-content: space-between;
+	background-color: #f8f8f8;
+	height: 50px;
+	border-radius: 4px;
+	padding: 10px;
+	box-shadow: 1px 1px #333;
+}
+.list__item-task {
+	font-size: 20px;
+}
+.list__item-right {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.list__item-change-text-button {
+	background-color: #6200ee;
+	padding: 7px;
+	width: 31px;
+	height: 30px;
+	border-radius: 7px;
+	background-image: url("../images/change.svg");
+	background-position: center;
+}
+.list__item-delete-button {
+	background-color: #ff4d4f;
+	padding: 7px;
+	width: 31px;
+	height: 30px;
+	border-radius: 7px;
+	background-image: url("../images/delete.svg");
+	background-position: center;
+}
+
+.list__item-type-button.not-done {
+	padding: 7px;
+	width: 30px;
+	height: 30px;
+	background-color: red;
+}
+.list__item-type-button.done {
+	padding: 7px;
+	width: 30px;
+	height: 30px;
+	background-color: green;
+}

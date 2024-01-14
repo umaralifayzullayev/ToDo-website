@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ToDo website</title>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="row">
+			<!-- add -->
+			<form class="add-form" action="#!" method="post">
+				<input class="add-input" type="text" placeholder="Yangi todo kiriting" autocomplete="off" required />
+				<button class="add-button" type="submit">Qo'shish</button>
+			</form>
+
+			<!-- search -->
+			<form class="search-form" action="#!" method="post">
+				<input class="search-input" type="text" placeholder="Qidiring" required autocomplete="off" />
+				<button class="search-button" type="submit">Qidirish</button>
+			</form>
+		</div>
+
+		<!-- numbers of all, completed and uncompleted-->
+		<div class="row">
+			<div class="number-body">
+				<button class="all-number-button number-button" type="button">All</button>
+				<span class="all-number number">0</span>
+			</div>
+			<div class="number-body">
+				<button class="completed-number-button number-button" type="button">Completed</button>
+				<span class="completed-number number">0</span>
+			</div>
+			<div class="number-body">
+				<button class="uncompleted-number-button number-button" type="button">Uncompleted</button>
+				<span class="uncompleted-number number">0</span>
+			</div>
+		</div>
+
+		<!-- list -->
+		<ul class="list">
+			<!-- <li class="list__item">
+				<p class="list__item-task">Task</p>
+				<div class="list__item-right">
+					<button class="list__item-change-text-button" type="button">
+						<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+							<path d="M14.6667 12L14 12.7294C13.6464 13.1161 13.1668 13.3333 12.6668 13.3333C12.1668 13.3333 11.6873 13.1161 11.3337 12.7294C10.9796 12.3434 10.5001 12.1267 10.0002 12.1267C9.50033 12.1267 9.02084 12.3434 8.66673 12.7294M2.66675 13.3333H3.78311C4.10923 13.3333 4.27229 13.3333 4.42574 13.2965C4.56179 13.2638 4.69185 13.21 4.81115 13.1368C4.9457 13.0544 5.061 12.9391 5.2916 12.7085L13.6668 4.33333C14.219 3.78104 14.219 2.88561 13.6668 2.33333C13.1145 1.78104 12.219 1.78104 11.6668 2.33333L3.29159 10.7085C3.06099 10.9391 2.94568 11.0544 2.86323 11.1889C2.79012 11.3082 2.73625 11.4383 2.70359 11.5744C2.66675 11.7278 2.66675 11.8909 2.66675 12.217V13.3333Z" stroke="#FEFEFE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+					<button class="list__item-delete-button" type="button">
+						<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+							<path d="M11.3334 4V3.46667C11.3334 2.71993 11.3334 2.34656 11.1881 2.06135C11.0603 1.81047 10.8563 1.60649 10.6054 1.47866C10.3202 1.33334 9.94682 1.33334 9.20008 1.33334H8.13341C7.38668 1.33334 7.01331 1.33334 6.72809 1.47866C6.47721 1.60649 6.27324 1.81047 6.14541 2.06135C6.00008 2.34656 6.00008 2.71993 6.00008 3.46667V4M7.33341 7.66667V11M10.0001 7.66667V11M2.66675 4H14.6667M13.3334 4V11.4667C13.3334 12.5868 13.3334 13.1468 13.1154 13.5747C12.9237 13.951 12.6177 14.2569 12.2414 14.4487C11.8136 14.6667 11.2535 14.6667 10.1334 14.6667H7.20008C6.07998 14.6667 5.51992 14.6667 5.0921 14.4487C4.71578 14.2569 4.40982 13.951 4.21807 13.5747C4.00008 13.1468 4.00008 12.5868 4.00008 11.4667V4" stroke="#FEFEFE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+					<button class="list__item-type-button" type="button">
+						<svg class="done" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" width="17" height="16">
+							<path d="M1 8l5 5 10-10" fill="none" stroke="green" stroke-width="2" />
+						</svg>
+						<svg class="not-done" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" width="17" height="16">
+							<path d="M1 1l15 14M1 15l15-14" fill="none" stroke="red" stroke-width="2" />
+						</svg>
+					</button>
+				</div>
+			</li> -->
+		</ul>
+		<script src="js/main.js"></script>
+	</body>
+</html>
